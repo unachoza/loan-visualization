@@ -1,1 +1,1 @@
-# loan-visualization
+# Loan Visualization
