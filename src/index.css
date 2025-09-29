@@ -1,3 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* CSS RESET  */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  color: var(--dark-blue)
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,11 +61,60 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background: url("./assets/building-background-medium.png") no-repeat center fixed;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+  
+
+
+  --grey: #ededee;
+  --background-grey: #f2f2f2;
+  --off-black: #3c4d4f;
+  --black: #000000;
+  --white: #ffffff;
+
+  --light-blue: #6dabdd;
+  --dark-blue: #405373;
+
+  --light-red: #e8544e;
+  --dark-red: #813330;
+  --error-red: #e31f1821;
+  --principal-green: #00C49F;
+  --interest-red: #e31f18a5;
+  --remaining-balance-purple: #9849e2;
+  --green: #a2d8ce;
+  --exciting-purple: rgb(215, 23, 215);
+
+  --font: 800 1rem/1.45 "Poppins";
+
+
+  /* formVariables */
+  /* --form-bg-color: #f2f2f2; */
+  --form-bg-color: none;
+  --form-padding: 20px;
+  --form-input-height: 40px;
+  --form-input-border: 1px solid #ccc;
+  --form-input-border-radius: 5px;
+  --form-input-margin-bottom: 10px;
+  --form-submit-bg-color: #007bff;
+  --form-submit-color: #fff;
+  --form-submit-padding: 10px 20px;
+  --form-submit-border-radius: 5px;
+
+  /* Spacing */;
+  --spacing-100: .5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1100: 5.25rem;
+
+}

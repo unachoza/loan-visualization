@@ -1,0 +1,68 @@
+/* $form-bg-color: #f2f2f2;
+$form-padding: 20px;
+$form-input-height: 40px;
+$form-input-border: 1px solid #ccc;
+$form-input-border-radius: 5px;
+$form-input-margin-bottom: 10px;
+$form-submit-bg-color: #007bff;
+$form-submit-color: #fff;
+$form-submit-padding: 10px 20px;
+$form-submit-border-radius: 5px; */
+
+form {
+      background: var(--form-bg-color);
+      padding: var(--form-padding);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      width: 100%;
+      border-radius: var(--form-input-border-radius);
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+            height: var(--form-input-height);
+            border: var(--form-input-border);
+            border-radius: var(--form-input-border-radius);
+            margin-bottom: var(--form-input-margin-bottom);
+            padding: 5px;
+            width: 100%;
+            background: var(--form-submit-color);
+            &:focus {
+                  outline: none;
+                  border-color: var(--form-submit-bg-color);
+            }
+      }
+      .text-input-container{
+            background:var(--form-bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+      }
+      .form-container{
+            margin-bottom: 20px;
+            width: 100%
+      }
+      .form-title{
+            background: var(--form-bg-color);
+      }
+}
+label{
+      background: var(--form-bg-color);
+}
+.scroll {
+
+      overflow: scroll;
+      min-width: 400px;
+}
+.form{
+      min-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+      backdrop-filter: blur(5px); /* Blurs the content behind the element */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
+      border-radius: 10px; /* Rounded corners for a softer look */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+}
