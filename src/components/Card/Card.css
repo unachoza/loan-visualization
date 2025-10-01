@@ -1,0 +1,61 @@
+.card-container{
+      display: flex;
+      width: 100vw;
+      flex-wrap: wrap;
+      @include center-container;
+}
+
+.loan-details {
+      padding: 20px;
+      height: 250px;
+      width: 350px;
+      background: $background-grey;
+      border: solid var(--dark-blue);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      margin: 10px;
+}
+  
+.loan-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      margin-top: 10px;
+      background: $background-grey;
+}
+  
+.loan-info div {
+      padding: 5px;
+      border-radius: 5px;
+      background:$white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+}
+
+.active{
+      background: #53d253;
+      border: solid 1px;
+      border-radius: 4px;
+      float: right;
+      padding: 4px;
+
+}
+
+@media only screen and (max-width: 600px) {
+      .loan-details{
+            width: 80vw;
+            height: 20vh;
+            /* border: red; */
+      }
+
+      .loan-details h2{
+            font-size: 18px;
+            margin: 0
+      }
+
+      .loan-details .button{
+            height: 100px;
+            width: 100px;
+      }
+}
+

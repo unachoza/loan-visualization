@@ -5,7 +5,7 @@ interface ButtonProps {
 	text: string;
 	type: "submit" | "reset" | "button";
 	name?: string;
-	handleClick: (e: FormEvent) => void;
+	handleClick: (e: FormEvent) => void | Promise<void>;
 }
 
 // data-testid="button-test" className="button" name={name}

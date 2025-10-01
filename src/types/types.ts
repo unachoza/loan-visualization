@@ -43,3 +43,17 @@ export type FormDataType = {
 	SHOW_USER_LOANS: ShowUserLoansType;
 	SHOW_LOAN_SCHEDULE: ShowLoanScheduleType;
 };
+
+export type LoanType = {
+	amount: number;
+	apr: number;
+	term: number;
+	status: "active" | "inactive";
+	owner_id: number;
+	id: number;
+};
+
+export type UserType = {
+	userName: string;
+	user_id: number;
+};
